@@ -1,2 +1,2 @@
-# learning-vhdl
-I am learning VHDL, a hardware description language, to describe and design digital circuits
+# Learning VHDL
+- I am learning VHDL, a hardware description language, to describe and design digital circuits
