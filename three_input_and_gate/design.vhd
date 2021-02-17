@@ -17,5 +17,5 @@ entity my_function is -- the function name is my_function
 architecture Behavioral of my_function is -- start architecture definition
 	-- declarative section is empty
 	begin -- implementation section
-		w<= (not (x or y)) or (y and z); -- a concurrent signal assignment to get the output
+		w<= x and y and z; -- a concurrent signal assignment to get the output
 	end Behavioral;
