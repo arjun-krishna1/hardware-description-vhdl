@@ -31,9 +31,9 @@ architecture behavioral of full_adder_1b is
     	ha_1 : half_adder port map(a => a_i, b => b_i, sum => sum_ha_1, carry => carry_ha_1);
         
     	ha_2 : half_adder port map(a => carry_in_i, b => sum_ha_1, sum => sum_i, carry => carry_ha_2);
-    	
-      --add your code here to complete the implementation
-      -- final or gate
-      carry_out_i <= carry_ha_2 or carry_ha_1;
+
+	--add your code here to complete the implementation
+	-- final or gate
+	carry_out_i <= carry_ha_2 or carry_ha_1;
         
    	end behavioral;
