@@ -35,14 +35,14 @@ begin
     y_in <= '0';
     z_in <= '0';
     wait for 1 ns;
-    assert(w_out='1') report "row 1 failed" severity error;
+    assert(w_out='0') report "row 1 failed" severity error;
     
     -- row 2
     x_in <= '0';
     y_in <= '0';
     z_in <= '1';
     wait for 1 ns;
-    assert(w_out='1') report "row 2 failed" severity error;
+    assert(w_out='0') report "row 2 failed" severity error;
     
     -- row 3
     x_in <= '0';
@@ -56,7 +56,7 @@ begin
     y_in <= '1';
     z_in <= '1';
     wait for 1 ns;
-    assert(w_out='1') report "row 4 failed" severity error;
+    assert(w_out='0') report "row 4 failed" severity error;
     
     -- row 5
     x_in <= '1';
